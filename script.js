@@ -178,3 +178,96 @@ fetch(requests.fetchComedyMovies)
         });
     });
 
+//Horror
+fetch(requests.fetchHorrorMovies)
+    .then((res) => res.json())
+
+    .then((data) => {
+        const headrow = document.getElementById("headrow");
+        const row = document.createElement("div");
+        row.className = "row";
+        headrow.appendChild(row);
+
+        const title = document.createElement("h2");
+        title.className = "row__title";
+        title.innerText = "Horror Movies";
+        row.appendChild(title);
+
+        const row_posters = document.createElement("div");
+        row_posters.className = "row__posters";
+        row.appendChild(row_posters);
+
+        data.results.forEach((movie) => {
+
+            const poster = document.createElement("img");
+            poster.className = "row__poster";
+            var s2 = movie.id;
+            poster.id = s2;
+            poster.src = img_url + movie.backdrop_path;
+            row_posters.appendChild(poster);
+
+        });
+    });
+
+//Romance
+fetch(requests.fetchRomanceMovies)
+    .then((res) => res.json())
+
+    .then((data) => {
+        const headrow = document.getElementById("headrow");
+        const row = document.createElement("div");
+        row.className = "row";
+        headrow.appendChild(row);
+
+        const title = document.createElement("h2");
+        title.className = "row__title";
+        title.innerText = "Romance Movies";
+        row.appendChild(title);
+
+        const row_posters = document.createElement("div");
+        row_posters.className = "row__posters";
+        row.appendChild(row_posters);
+
+        data.results.forEach((movie) => {
+
+            const poster = document.createElement("img");
+            poster.className = "row__poster";
+            var s2 = movie.id;
+            poster.id = s2;
+            poster.src = img_url + movie.backdrop_path;
+            row_posters.appendChild(poster);
+
+        });
+    });
+
+//Documentary
+fetch(requests.fetchDocumentaries)
+    .then((res) => res.json())
+
+    .then((data) => {
+        const headrow = document.getElementById("headrow");
+        const row = document.createElement("div");
+        row.className = "row";
+        headrow.appendChild(row);
+
+        const title = document.createElement("h2");
+        title.className = "row__title";
+        title.innerText = "Documentaries";
+        row.appendChild(title);
+
+        const row_posters = document.createElement("div");
+        row_posters.className = "row__posters";
+        row.appendChild(row_posters);
+
+        data.results.forEach((movie) => {
+
+            const poster = document.createElement("img");
+            poster.className = "row__poster";
+            var s2 = movie.id;
+            poster.id = s2;
+            poster.src = img_url + movie.backdrop_path;
+            row_posters.appendChild(poster);
+
+        });
+    });
+
