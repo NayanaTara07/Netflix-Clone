@@ -123,5 +123,9 @@ body{
 .row__poster:hover{
     transform: scale(1.08);
 }
-
+.row__posterLarge,
+.row__posterLarge1,
+.row__posterLarge2{
+    
+}
     
