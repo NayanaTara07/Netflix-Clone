@@ -136,7 +136,7 @@ body{
 .row__posterLarge1:hover,
 .row__posterLarge2:hover{
     transform: scale(1.09);
-    
+    opacity: 1;
 }
 
     
