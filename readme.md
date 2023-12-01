@@ -1,2 +1,2 @@
 #Netflix-Clone
-<a href="https://nayanatara07.github.io/Netflix-Clone/" target="_blank"></a>
+[https://nayanatara07.github.io/Netflix-Clone/](url){:target="_blank"}
