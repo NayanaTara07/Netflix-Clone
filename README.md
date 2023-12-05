@@ -1,1 +1,2 @@
-# Netflix-HomePage-Clone
+# Netflix-Clone
+HOME PAGE
