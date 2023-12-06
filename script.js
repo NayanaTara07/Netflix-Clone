@@ -44,7 +44,8 @@ fetch(requests.fetchNetflixOriginals)
         banner.style.backgroundImage =
             "url(" + banner_url + setMovie.backdrop_path + ")";
         banner__desc.innerText = truncate(setMovie.overview,150);
-        banner_title.innerText = setMovie.name;    
+        // banner_title.innerText = setMovie.name; 
+        banner_title = "setMovie.name";   
     })
 
 // movie rows
